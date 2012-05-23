@@ -1,8 +1,0 @@
-# place in content folder/attachments/gallery
-
-Gallery:
-    name: Testing gallery
-    folder: gallery
-Gallery2:
-    name: Testing gallery
-    folder: gallery2
