@@ -1,0 +1,18 @@
+# place in content folder/attachments/gallery
+
+# default resolutions are used if not provided
+width_resolutions: [320, 640, 800, 960, 1024, 1152, 1280, 1366, 1680, 1920]
+height_resolutions: [200, 480, 600, 540, 768, 720, 800, 768, 1050, 1080]
+
+# closest, smaller, bigger
+# closest: returns image with closest resolution
+# smaller: returns image with smaller resolution
+# bigger: returns image with bigger resolution
+# default (closest) is used if not provided
+resize_method: closest
+
+# url, hash 
+# url: returns image url
+# hash: returns hash with url, width and height of image - for JSON use
+# default (url) is used if not provided
+image_return_method: hash 
