@@ -1,0 +1,6 @@
+- get_galleries().each do |gallery|
+	%h2= gallery["name"]
+	.gallery
+		- get_images(gallery["folder"]).each do |image|
+			%img.image{:src => get_image(gallery["folder"], image["file"], 250, 200)}
+		%br.clear
