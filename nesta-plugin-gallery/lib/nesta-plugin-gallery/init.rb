@@ -66,9 +66,9 @@ module Nesta
 
 			return Array.new if yml.empty?
 
-            list = Hash.new
+            list = Array.new
             yml.each do |name, data|
-                list[data["folder"]] = data["name"]
+                list.push data
             end
 
 			return list
