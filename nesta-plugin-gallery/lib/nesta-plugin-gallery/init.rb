@@ -23,7 +23,7 @@ module Nesta
 
         # returns image resized to fit provided resolution with method selected in config.yml
         # @return Hash or String
-        def get_image(gallery, name, width, height)
+        def get_image(gallery, name, width=0, height=0)
             Gallery.get_image(gallery, name, width, height)
         end
 
@@ -120,7 +120,7 @@ module Nesta
 			return images
 		end
 
-        def self.get_image(gallery, image, width, height)
+        def self.get_image(gallery, image, width=0, height=0)
             path = GALLERIES_DIRECTORY + gallery + "/"
 
             full = path + "full/" + image
